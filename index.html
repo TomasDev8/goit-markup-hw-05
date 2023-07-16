@@ -25,7 +25,7 @@
             <a href="index.html" class="link-logo link-position contour-logo">WebStudio</a>
             <nav class="nav-flex">
                 <ul class="link-position">
-                    <li><a href="./index.html" class="link">Estudio</a></li>
+                    <li><a href="./index.html" class="link after-index">Estudio</a></li>
                     <li><a href="./portafolio.html" class="link">Portafolio</a></li>
                     <li><a href="/contacto" class="link">Contacto</a></li>
                 </ul>
@@ -59,8 +59,19 @@
         <section class="section-padding background-image image-padding">
             <div class="first-section container">
                 <h1 class="tittle">SOLUCIONES EFICACES PARA <br>SU NEGOCIO</h1>
-                <button type="button" class="request-our-services-btn request-our-services-btn-style">Solicite nuestro
+                <button type="button" class="request-our-services-btn request-our-services-btn-style"
+                    data-modal-open>Solicite nuestro
                     Servicio</button>
+                <div class="backdrop hidding" data-modal>
+                    <div class="container-box">
+                        <div class="box-modal">
+                            <div class="icon-close-style"><svg width="20" height="20" viewBox="-1 1 20 15" data-modal-close>
+                                    <use href="/spriteSVG/icons.svg#icon-close"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -307,6 +318,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

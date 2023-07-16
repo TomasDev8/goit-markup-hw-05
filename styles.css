@@ -83,6 +83,17 @@ p {
     color: var(--brand-color);
 }
 
+.after-index::after {
+    content: "";
+    width: 49px;
+    height: 4px;
+    background-color: var(--brand-color);
+    display: block;
+    position: absolute;
+    top: 76px;
+    border-radius: 2px;
+}
+
 .link-position {
     display: flex;
     margin: 0;
@@ -169,6 +180,11 @@ p {
     fill:var(--brand-color);
 }
 
+.after-portafolio,
+.after-index {
+    color: var(--brand-color);
+}
+
 /*main (first section)*/
 
 .section-padding {
@@ -225,6 +241,46 @@ p {
     padding-bottom: 10px;
 
 }
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+ .backdrop.hidding {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+ }
+
+ .container-box {
+     margin-top: 35px;
+ }
+
+ .box-modal {
+     width: 528px;
+     height: 581px;
+     background-color: rgba(255, 255, 255, 1);
+     display: flex;
+     justify-content: flex-end;
+ }
+
+ .icon-close-style {
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-right: 5px;
+ }
 
 .request-our-services-btn:hover,
 .request-our-services-btn:focus {
@@ -519,6 +575,17 @@ p {
 .border-2 {
     border-bottom: 1px solid #C4C4C4;
 
+}
+
+.after-portafolio::after {
+    content: "";
+    width: 74px;
+    height: 4px;
+    background-color: var(--brand-color);
+    display: block;
+    position: absolute;
+    top: 76px;
+    border-radius: 2px;
 }
 
 /*main (only section)*/
