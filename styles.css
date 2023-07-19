@@ -96,6 +96,12 @@ p {
     border-radius: 2px;
 }
 
+.after-portafolio,
+.after-index {
+    color: var(--brand-color);
+    position: relative;
+}
+
 .link-position {
     display: flex;
     margin: 0;
@@ -124,8 +130,7 @@ p {
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 50px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts {
@@ -142,7 +147,7 @@ p {
     line-height: 16px;
     position: relative;
     top: -1px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .phone-icon {
@@ -153,7 +158,7 @@ p {
     line-height: 16px;
     position: relative;
     top: -1px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .font-position {
@@ -164,11 +169,11 @@ p {
     letter-spacing: 0.02em;
     color: var(--font-two-color);
     padding: 32px 0 32px 0;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .linkto {
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .margin-text {
@@ -190,12 +195,6 @@ p {
 .font-position:hover .phone-icon,
 .font-position:focus .phone-icon {
     fill: var(--brand-color);
-}
-
-.after-portafolio,
-.after-index {
-    color: var(--brand-color);
-    position: relative;
 }
 
 /*main (first section)*/
@@ -252,7 +251,9 @@ p {
     border-radius: 4px;
     padding-top: 10px;
     padding-bottom: 10px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .backdrop.is-hidden {
@@ -278,16 +279,16 @@ p {
 
 .box-modal {
     position: absolute;
-    top: 50% left 50% transform translate(-50%, -50%) scale(1);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
     padding: 8px;
     width: 528px;
     height: 581px;
     border-radius: 4px;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #FFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-top: 75px;
-
 }
 
 .icon-close-style {
@@ -296,14 +297,13 @@ p {
     width: 31px;
     height: 31px;
     border-radius: 50%;
-    margin-top: 0;
-    margin-left: 480px;
+    right:8px;
     position: absolute;
 }
 
 .request-our-services-btn:hover,
 .request-our-services-btn:focus {
-    background-color: #1367ac;
+    background-color: #18619c;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -462,7 +462,8 @@ p {
     width: 100%;
     height: 100%;
     fill: #AFB1B8;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-social-media-list-link:hover {
@@ -485,7 +486,9 @@ p {
     background-color: var(--icon-color);
     width: 170px;
     height: 81px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .icon-color {
@@ -495,7 +498,8 @@ p {
     width: 100%;
     height: 100%;
     fill: #AFB1B8;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-color:hover,
@@ -586,7 +590,7 @@ p {
     align-items: center;
     width: 100%;
     height: 100%;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-footer:hover,
@@ -634,7 +638,9 @@ p {
     font-weight: 500;
     cursor: pointer;
     background: #E5E5E5;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container-cards {
@@ -654,7 +660,7 @@ p {
     box-shadow: 1px 4px 6px 0px #00000029;
     box-shadow: 0px 4px 4px 0px #0000000F;
     box-shadow: 0px 1px 1px 0px #0000001F;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-information {
